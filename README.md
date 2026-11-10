@@ -11,9 +11,16 @@
 | Command | Aliases | What it does |
 |---|---|---|
 | `/app-utility-prompts restyle` | `ristrutturazione`, `redesign`, `grafica` | Full graphic rebuild of the app: nicer look, polished animations, better usability. No questions unless asked. |
-| `/app-utility-prompts skeumorphism` | `skeuomorphism`, `skeumorfismo`, `skeu` | Full redesign in skeuomorphic style. Asks first whether you want screenshots of the result. |
-| `/app-utility-prompts modern-ui` | `modernui`, `metro`, `windows-phone`, `wp` | Full redesign in Modern UI (Windows Phone / Metro) style. Asks first whether you want screenshots of the result. |
+| `/app-utility-prompts skeumorphism` | `skeuomorphism`, `skeumorfismo`, `skeu` | Full redesign in skeuomorphic style. Asks first whether you want screenshots of the result, and whether to replace the current design or let app users pick the style. |
+| `/app-utility-prompts modern-ui` | `modernui`, `metro`, `windows-phone`, `wp` | Full redesign in Modern UI (Windows Phone / Metro) style. Asks first whether you want screenshots of the result, and whether to replace the current design or let app users pick the style. |
 | `/app-utility-prompts help` | no argument, `?`, `lista` | Shows the command list. |
+
+### Replace or let users choose
+
+Before starting, `skeumorphism` and `modern-ui` ask whether to:
+
+- **Replace** the current design with the new style, or
+- **Add a style switch**, so app users choose between the current design and the new style. The switch goes in the app's settings, or in another fitting place if the app has no settings screen.
 
 Extra text after the command is passed on as an extra instruction, e.g. `/app-utility-prompts skeu only the home screen`.
 
