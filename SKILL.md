@@ -43,7 +43,7 @@ Leggi l'argomento (ARGUMENTS). Confronto senza maiuscole/minuscole, accetta gli 
 
 ## Prompt: restyle — Ristrutturazione Grafica App
 
-voglio ristrutturare completamente l’app rendendo la grafica piu bella possibile e accativante e curata, con belle animazioni curate, la grafica e la struttura delle pagine attuale non mi piace, dobbiamo ristrutturare il tutto completamente, strutturala tu senza farmi particolari domande a meno che non te lo richiedo. L'importante è la rifai completamente da capo lato grafico e cerchi di migliorarla a 360 gradi e a migliorarne l'usabilità
+voglio ristrutturare completamente l’app rendendo la grafica piu bella possibile e accativante e curata, con belle animazioni curate, la grafica e la struttura delle pagine attuale non mi piace, dobbiamo ristrutturare il tutto completamente. Rifai la grafica da zero, come se l'app non esistesse: non partire dalle schermate, dai layout, dalla navigazione o dai componenti UI attuali e non limitarti a ritoccarli. Progetta da capo schermate, navigazione, gerarchia e flussi, migliorando l'app a 360 gradi anche nell'usabilità. Preserva invece la struttura dei dati: modelli, database, schema, API, logica di business e dati salvati degli utenti restano invariati e compatibili, e ogni funzione esistente deve restare raggiungibile nella nuova UI. Prima di iniziare, se ti serve per capire come la voglio, fammi poche domande mirate (es. stile e mood, colori, tema chiaro/scuro, tipo di navigazione, app di riferimento che mi piacciono, cosa non mi piace oggi); se non ti serve o ti rispondo "decidi tu", strutturala tu. Poi procedi senza altre domande a meno che non te lo richiedo.
 
 ---
 
