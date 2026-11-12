@@ -1,7 +1,7 @@
 ---
 name: app-utility-prompts
-description: Prompt preimpostati per app native (Android, iOS, Flutter, React Native, desktop). Uso /app-utility-prompts <comando>. Comandi - restyle (ristrutturazione grafica completa), skeumorphism (ridisegno in stile skeuomorfismo), modern-ui (ridisegno in stile Modern UI / Windows Phone), help (elenco comandi). Usa questa skill quando l'utente scrive /app-utility-prompts, con o senza argomento.
-argument-hint: "[restyle | skeumorphism | modern-ui | help]"
+description: Prompt preimpostati per app native (Android, iOS, Flutter, React Native, desktop). Uso /app-utility-prompts <comando>. Comandi - restyle (ristrutturazione grafica completa), skeumorphism (ridisegno in stile skeuomorfismo), modern-ui (ridisegno in stile Modern UI / Windows Phone), nothing-ui (ridisegno in stile Nothing), help (elenco comandi). Usa questa skill quando l'utente scrive /app-utility-prompts, con o senza argomento.
+argument-hint: "[restyle | skeumorphism | modern-ui | nothing-ui | help]"
 ---
 
 # app-utility-prompts
@@ -17,6 +17,7 @@ Leggi l'argomento (ARGUMENTS). Confronto senza maiuscole/minuscole, accetta gli 
 | `restyle` | `ristrutturazione`, `redesign`, `grafica` | Ristrutturazione Grafica App |
 | `skeumorphism` | `skeuomorphism`, `skeumorfismo`, `skeuomorfismo`, `skeu` | Grafica Skeumorfismo |
 | `modern-ui` | `modernui`, `metro`, `windows-phone`, `wp` | Grafica Modern UI (Windows Phone) |
+| `nothing-ui` | `nothing`, `nothingui`, `nothing ui`, `nothing-os` | Grafica Nothing |
 | `help` | nessun argomento, `?`, `lista` | Mostra l'elenco comandi |
 
 - Argomento vuoto, `help` o non riconosciuto: rispondi solo con l'elenco comandi qui sotto (se non riconosciuto, dillo in una riga). Non fare altro.
@@ -28,6 +29,7 @@ Leggi l'argomento (ARGUMENTS). Confronto senza maiuscole/minuscole, accetta gli 
 /app-utility-prompts restyle        Ristrutturazione grafica completa dell'app
 /app-utility-prompts skeumorphism   Ridisegno completo in stile skeuomorfismo
 /app-utility-prompts modern-ui      Ridisegno completo in stile Modern UI (Windows Phone)
+/app-utility-prompts nothing-ui     Ridisegno completo in stile Nothing (design system Nothing)
 /app-utility-prompts help           Questo elenco
 ```
 
@@ -56,3 +58,11 @@ Voglio una cosa su questa app, prima di committare o pushare qualcosa e di rilas
 ## Prompt: modern-ui — Grafica Modern UI (Windows Phone)
 
 Voglio una cosa su questa app, prima di committare o pushare qualcosa e di rilasciare la versione nuova, voglio che ridisegni graficamente l'app completamente in stile Modern UI (Windows Phone), se ti serve fatti aiutare da chatgpt (se lo hai configurato) a generare le cose (solo se ti serve). Prima di iniziare chiedimi se voglio ricevere degli screenshot sul risultato che esce fuori (telegram se configurato o email se configurata, altrimenti allegali in questa sessione, basta che ho modo di vederli) ma tieniti pronto a ritornare indietro se non dovesse piacermi il risultato. Sempre prima di iniziare chiedimi anche se voglio sostituire completamente la grafica attuale con il Modern UI oppure se voglio far scegliere all'utilizzatore dell'app quale stile usare (grafica attuale o Modern UI) dalle impostazioni dell'app, se ci sono, altrimenti da un altro punto adatto dell'app. Sono un gran appassionato dello Modern UI (Windows Phone). Fai un bel lavoro come si deve e poi, se richiesto,  inviami gli screenshot di tutte le schermate come sono uscite fuori.
+
+---
+
+## Prompt: nothing-ui — Grafica Nothing
+
+Riferimento obbligatorio: il design system Nothing della skill https://github.com/dominikmartn/nothing-design-skill. Prima di progettare leggi `nothing-design/SKILL.md` e i file in `nothing-design/references/` (`tokens.md`, `components.md`, `platform-mapping.md`), ad esempio da `https://raw.githubusercontent.com/dominikmartn/nothing-design-skill/main/nothing-design/<file>`, e segui token, componenti e mappatura per la piattaforma dell'app.
+
+Voglio una cosa su questa app, prima di committare o pushare qualcosa e di rilasciare la versione nuova, voglio che ridisegni graficamente l'app completamente in stile Nothing (la marca di smartphone), seguendo il design system Nothing della skill indicata sopra, se ti serve fatti aiutare da chatgpt (se lo hai configurato) a generare le cose (solo se ti serve). Prima di iniziare chiedimi se voglio ricevere degli screenshot sul risultato che esce fuori (telegram se configurato o email se configurata, altrimenti allegali in questa sessione, basta che ho modo di vederli) ma tieniti pronto a ritornare indietro se non dovesse piacermi il risultato. Sempre prima di iniziare chiedimi anche se voglio sostituire completamente la grafica attuale con lo stile Nothing oppure se voglio far scegliere all'utilizzatore dell'app quale stile usare (grafica attuale o Nothing) dalle impostazioni dell'app, se ci sono, altrimenti da un altro punto adatto dell'app. Sono un gran appassionato dello stile Nothing. Fai un bel lavoro come si deve e poi, se richiesto, inviami gli screenshot di tutte le schermate come sono uscite fuori.
