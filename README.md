@@ -14,11 +14,12 @@
 | `/app-utility-prompts skeumorphism` | `skeuomorphism`, `skeumorfismo`, `skeu` | Full redesign in skeuomorphic style. Asks first whether you want screenshots of the result, and whether to replace the current design or let app users pick the style. |
 | `/app-utility-prompts modern-ui` | `modernui`, `metro`, `windows-phone`, `wp` | Full redesign in Modern UI (Windows Phone / Metro) style. Asks first whether you want screenshots of the result, and whether to replace the current design or let app users pick the style. |
 | `/app-utility-prompts nothing-ui` | `nothing`, `nothingui`, `nothing-os` | Full redesign in Nothing style, following the [nothing-design-skill](https://github.com/dominikmartn/nothing-design-skill) design system. Asks first whether you want screenshots of the result, and whether to replace the current design or let app users pick the style. |
+| `/app-utility-prompts dueffe` | `dueffe-ui`, `dueffe-home`, `df` | Full redesign in Dueffe style, following the Dueffe design system in `references/dueffe-ds.md`. Asks first whether you want screenshots of the result, and whether to replace the current design or let app users pick the style. |
 | `/app-utility-prompts help` | no argument, `?`, `lista` | Shows the command list. |
 
 ### Replace or let users choose
 
-Before starting, `skeumorphism`, `modern-ui` and `nothing-ui` ask whether to:
+Before starting, `skeumorphism`, `modern-ui`, `nothing-ui` and `dueffe` ask whether to:
 
 - **Replace** the current design with the new style, or
 - **Add a style switch**, so app users choose between the current design and the new style. The switch goes in the app's settings, or in another fitting place if the app has no settings screen.
